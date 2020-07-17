@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>jQuery Dialog example</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.9.1.js"
+    
+  ></script>
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/themes/ui-lightness/jquery-ui.css">
+
+  <style id="compiled-css" type="text/css">
+      
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+</head>
+<body>
+<table>
+<thead>
+    <tr>
+        <th align=center>0</th>
+        <th align=center>Arshad<br></th>
+        <th align=center>Rahoof<br></th>
+        <th align=center>Chota<br></th>
+        <th align=center>Yasir<br></th>
+        <th align=center>Subi<br></th>
+        <th align=center>Total:<br></th>
+    </tr>
+</thead>
+<tbody>
+<tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>1</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1347_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1347_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1347_3'></td>
+     <td align=right><input class='saisie' type='text' size=4 name='1347_4'></td>
+     <td align=right><input class='saisie' type='text' size=4 name='1347_5'></td>
+    <td align=right></td>
+</tr>
+<tr class='normal' onMouseOver="this.className='highlight'" onMouseOut="this.className='normal'">
+    <td align=left>2</td>
+    <td align=right><input class='saisie' type='text' size=4 name='4482_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='4482_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='4482_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='4482_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='4482_5'></td>
+    <td align=right></td>
+</tr>
+<tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>3</td>
+    <td align=right><input class='saisie' type='text' size=4 name='7969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='7969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='7969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='7969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='7969_5'></td>
+    <td align=right></td>
+</tr>
+<tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>4</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>5</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>6</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>7</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>8</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>9</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>10</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>11</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>12</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>13</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>14</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>15</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>16</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>17</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>18</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>19</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>20</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>21</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>22</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>23</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>24</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>25</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>26</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>27</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>28</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>29</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>30</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>31</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>32</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>33</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>34</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>35</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>36</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>37</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>38</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>39</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>40</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>41</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>42</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>43</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>44</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>45</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>46</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>47</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>48</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>49</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    <tr class='alt' onMouseOver="this.className='highlight'" onMouseOut="this.className='alt'">
+    <td align=left>50</td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_1'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_2'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_3'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_4'></td>
+    <td align=right><input class='saisie' type='text' size=4 name='1969_5'></td>
+    <td align=right></td>
+</tr>
+    
+<tr class="totalColumn">
+    <td class="totalCol" align=right>Total:</td>
+    <td class="totalCol" align=right></td>
+    <td class="totalCol" align=right></td>
+    <td class="totalCol" align=right></td>
+    <td class="totalCol" align=right></td>
+    <td class="totalCol" align=right></td>
+</tr>
+</tbody>
+</table><span id=sum name sum></span>
+
+    <script type="text/javascript">//<![CDATA[
+
+
+$(document).ready(function(){
+    $(".saisie").each(function() {
+        $(this).keyup(function(){           calculateTotal($(this).parent().index());
+        });
+    });
+});
+
+function calculateTotal(index)
+{
+   var total = 0;
+    $('table tr td').filter(function(){
+        if($(this).index()==index)
+        {
+        total += parseFloat($(this).find('.saisie').val())||0;
+        }
+    }
+    );
+    $('table tr td.totalCol:eq('+index+')').html(total);
+   calculateSum();
+    calculateRowSum();
+}
+function calculateRowSum()
+{
+    $('table tr:has(td):not(:last)').each(function(){
+       var sum = 0; $(this).find('td').each(function(){
+          sum += parseFloat($(this).find('.saisie').val()) || 0;
+        });
+           $(this).find('td:last').html(sum);
+    });
+}
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "db5SX"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
